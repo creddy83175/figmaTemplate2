@@ -1306,7 +1306,7 @@ background: url(image.png);
             <a href="#" class="about-css">Site Map</a>
             <span class="right-border1"></span>
             <a href="#" class="about-css">Eng</a>
-            <select style="border:none"><label></label>
+            <select style="border:none" id="select-dropdown" value="select dropdown"><label for="select-dropdown"></label>
             </select>
         </div>
         <div class="search-main-css">
@@ -1405,23 +1405,22 @@ background: url(image.png);
                     </div>
     
                     <div class="radio-btn">
-                        <!-- <div class="radio1"> -->
-                        <input class="form-input-radio" type="radio"><label class="radio-label"> UI Developer</label>
-                        <!-- </div> -->
-                        <input class="form-input-radio" type="radio"><label class="radio-label"> UI/UX Designer</label>
-                        <input class="form-input-radio" type="radio"><label class="radio-label">Accessibility
-                            Expert</label>
-                        <input class="form-input-radio" type="radio"><label class="radio-label">QA Engineer</label>
-                        <input class="form-input-radio" type="radio"><label class="radio-label"> Other</label>
+                        <form>
+                        <input class="form-input-radio" type="radio" id="ui-dev" name="jobRole" value="UI Developer"><label for="ui-dev" class="radio-label"> UI Developer</label>
+                        <input class="form-input-radio" type="radio" id="ui-ux-designer" name="jobRole" value="UI/UX Designer"><label for="ui-ux-designer" class="radio-label"> UI/UX Designer</label>
+                        <input class="form-input-radio" type="radio" id="accessibility-expert" name="jobRole" value="Accessibility Expert"><label for="accessibility-expert" class="radio-label">Accessibility Expert</label>
+                        <input class="form-input-radio" type="radio" id="qa-engineer" name="jobRole" value="QA Engineer"><label for="qa-engineer" class="radio-label">QA Engineer</label>
+                        <input class="form-input-radio" type="radio" id="other" name="jobRole" value="Other"><label for="other" class="radio-label"> Other</label>
+                        </form>
                     </div>
                     <label class="text-message">Message</label>
                     <textarea placeholder="Text here...." class="text-area-css"></textarea>
     
                     <div class="contact-right-inputs">
-                        <input class="form-input-checkbox" type="checkbox"><label class="checkbox-label"> Accept terms</label>
-                        <input class="form-input-checkbox2" type="checkbox"><label class="checkbox-label2"> Accept
-                            terms2</label>
-    
+                        <form>
+                        <input class="form-input-checkbox" type="checkbox" id="accept-terms" name="jobRole2" value="Accept terms"><label for="accept-terms" class="checkbox-label"> Accept terms</label>
+                        <input class="form-input-checkbox2" type="checkbox" id="accept-terms2" name="jobRole2" value="Accept terms2"><label for="accept-terms2" class="checkbox-label2"> Accept terms2</label>
+                        </form>
                     </div>
                     <div class="send-message-main">
                         <button type="submit" class="send-message">Send Message</button>
